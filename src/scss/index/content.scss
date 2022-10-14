@@ -1,0 +1,138 @@
+.main-banner {
+	width: 100%;
+	position: relative;
+	height: calc(100vh - 141px);
+	&__bg {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100vh;
+		top: -140px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__blocks {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		padding: 85px 0 0 0;
+	}
+	&__content {
+		width: 530px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		&-t {
+			font-family: 'NunitoSans';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 55px;
+			letter-spacing: -0.114286px;
+			color: #ffffff;
+		}
+		&-d {
+			margin: 35px 0 0 0;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 27px;
+			color: rgba(255, 255, 255, 0.7);
+		}
+		&-b {
+			margin: 65px 0 0 0;
+			background: #d5ba64;
+			border-radius: 5px;
+			font-family: 'NunitoSans';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 16px;
+			color: #ffffff;
+			padding: 16px 75px;
+		}
+	}
+	&__video {
+		padding: 70px 0 0 0;
+		position: relative;
+		width: 534px;
+		&-t {
+			position: absolute;
+			top: 10px;
+			width: 288px;
+			left: 130px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 18px;
+			color: #ffffff;
+		}
+		&-d {
+			position: absolute;
+			top: 0px;
+			left: 55px;
+		}
+		&-v {
+			width: 100%;
+			& video {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.main-description {
+	width: 100%;
+	padding: 117px 0;
+	& .containers {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__banner {
+		width: 493px;
+		height: 392px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__content {
+		width: 555px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 36px;
+		&-t {
+			width: 100%;
+			font-family: 'NunitoSans';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 55px;
+			color: #4a4a4a;
+			text-align: right;
+		}
+		&-d {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: right;
+			color: rgba(0, 0, 0, 0.7);
+		}
+	}
+}

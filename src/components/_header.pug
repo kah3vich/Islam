@@ -1,0 +1,94 @@
+- var types = '@@types'
+- var activePage = '@@activePage'
+
+header.header
+    if types === 'whites'
+        .header__wrapper.header__wrapper-white
+            .containers 
+                a(href="/").header__logo 
+                    img(src="./img/header/logo-white.png")
+                .header__navs
+                    if activePage === '/'
+                        nav.header__nav.header__nav-a 
+                            a(href="/") Главная
+                    else 
+                        nav.header__nav
+                            a(href="/") Главная
+                    if activePage === '/donate'
+                        nav.header__nav.header__nav-a 
+                            a(href="/donate.html") Пожертвовать
+                    else 
+                        nav.header__nav 
+                            a(href="/donate.html") Пожертвовать
+                    if activePage === '/volunteers'
+                        nav.header__nav.header__nav-a 
+                            a(href="/volunteers.html") Волонтеры
+                    else 
+                        nav.header__nav 
+                            a(href="/volunteers.html") Волонтеры
+                    if activePage === '/contributors'
+                        nav.header__nav.header__nav-a 
+                            a(href="/contributors.html") Жертвователи
+                    else 
+                        nav.header__nav
+                            a(href="/contributors.html") Жертвователи
+                    if activePage === '/verification'
+                        nav.header__nav.header__nav-a 
+                            a(href="/verification.html") Проверка сертификата
+                    else 
+                        nav.header__nav
+                            a(href="/verification.html") Проверка сертификата
+                    if activePage === '/for_volunteers'
+                        nav.header__nav.header__nav-a 
+                            a(href="/for_volunteers.html") Для волонтеров
+                    else 
+                        nav.header__nav 
+                            a(href="/for_volunteers.html") Для волонтеров
+                .header__lang select 
+    else 
+        .header__wrapper.header__wrapper-black
+            .containers 
+                .header__logo 
+                    img(src="./img/header/logo-black.png")
+                .header__navs
+                    if activePage === '/'
+                        nav.header__nav.header__nav-a 
+                            a(href="/") Главная
+                    else 
+                        nav.header__nav
+                            a(href="/") Главная
+                    if activePage === '/donate'
+                        nav.header__nav.header__nav-a 
+                            a(href="/donate.html") Пожертвовать
+                    else 
+                        nav.header__nav 
+                            a(href="/donate.html") Пожертвовать
+                    if activePage === '/volunteers'
+                        nav.header__nav.header__nav-a 
+                            a(href="/volunteers.html") Волонтеры
+                    else 
+                        nav.header__nav 
+                            a(href="/volunteers.html") Волонтеры
+                    if activePage === '/contributors'
+                        nav.header__nav.header__nav-a 
+                            a(href="/contributors.html") Жертвователи
+                    else 
+                        nav.header__nav
+                            a(href="/contributors.html") Жертвователи
+                    if activePage === '/verification'
+                        nav.header__nav.header__nav-a 
+                            a(href="/verification.html") Проверка сертификата
+                    else 
+                        nav.header__nav
+                            a(href="/verification.html") Проверка сертификата
+                    if activePage === '/for_volunteers'
+                        nav.header__nav.header__nav-a 
+                            a(href="/for_volunteers.html") Для волонтеров
+                    else 
+                        nav.header__nav 
+                            a(href="/for_volunteers.html") Для волонтеров
+                .header__lang 0 
+    .header__banner 
+        .containers
+            .header__banner-t Проверьте ваш сертификат чтобы убедиться что он выдан  что то там что то там оверьте ваш сертификат чтобы убедиться что 
+            a(href="/").header__banner-b Проверить

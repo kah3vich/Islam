@@ -1,0 +1,38 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug', {
+    "type": "white",
+    "activePage": "/"
+})
+
+.main-banner 
+    .main-banner__bg 
+        img(src="./img/main/banner.png")
+    .main-banner__wrapper 
+        .containers
+            .main-banner__blocks  
+                .main-banner__content 
+                    .main-banner__content-t Проект, который сделает этот мир лучше
+                    .main-banner__content-d Равным образом консультация с широким активом позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый о
+                    a(href="/").main-banner__content-b Внести свой вклад
+                .main-banner__video 
+                    .main-banner__video-t Посмотрите короткое видео, чтобы понять нашу идею и ценности
+                    .main-banner__video-d 
+                        img(src="./svg/main/arrow-decor.svg")
+                    .main-banner__video-v 
+                        video(poster="image" loop="loop" controls="controls" tabindex="0")
+                            source(src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+
+.main-description 
+    .containers
+        .main-description__banner 
+            img(src="./img/main/desc.png")
+        .main-description__content 
+            .main-description__content-t Почему вам стоит 
+            .main-description__content-d Равным образом консультация с широким активом позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Таким образом укрепление и развитие структуры позволяет оценить значение соответствующий условий 
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')

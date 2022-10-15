@@ -1,0 +1,54 @@
+@@include('components/_head.pug', {
+    "title": "Жертвователи"
+})
+
+@@include('components/_header.pug', {
+    "type": "black",
+    "activePage": "/contributors"
+})
+
+- var n = 0;
+
+.contributors 
+    .containers 
+        .contributors__t Жертвователи
+
+        @@include('components/_banners.pug')
+
+        .contributors__filter 
+            .contributors__filter-i
+                .contributors__filter-t Дата 
+                @@include('components/_select.pug', {
+                    placeholder: "Сначала последние"
+                })
+            .contributors__filter-i 
+                .contributors__filter-t ФИО жертвователя 
+                @@include('components/_inputSearch.pug', {
+                    placeholder: "Поиск по ФИО жертвователя"
+                })
+            .contributors__filter-i
+                .contributors__filter-t Сумма  
+                @@include('components/_select.pug', {
+                    placeholder: "Сортировка по умолчанию"
+                })
+            .contributors__filter-i 
+                .contributors__filter-t Регион
+                @@include('components/_inputSearch.pug', {
+                    placeholder: "Поиск по региону"
+                })
+        
+        .contributors__list 
+            each _ in Array(155)
+                .contributors__item
+                    .contributors__item-d 12.02.2022
+                    .contributors__item-n Иванов Иван Александрович
+                    .contributors__item-p 10.000 ₽
+                    .contributors__item-c Россия, Самарская обл. г. Тольятти
+
+
+        #pagination-controls
+
+
+
+
+@@include('components/_script.pug')

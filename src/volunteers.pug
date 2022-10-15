@@ -16,7 +16,7 @@
                     .swiper-slide 
                         .volunteers-recom__slider-i 
                             .volunteers-recom__slider-bg 
-                                img(src="./svg/bg.svg")
+                                img(src="./svg/volunteers/bg.svg")
                             .volunteers-recom__slider-c
                                 .volunteers-recom__slider-subtitle Подзаголовок
                                 .volunteers-recom__slider-title 
@@ -29,7 +29,7 @@
                     .swiper-slide 
                         .volunteers-recom__slider-i 
                             .volunteers-recom__slider-bg 
-                                img(src="./svg/bg.svg")
+                                img(src="./svg/volunteers/bg.svg")
                             .volunteers-recom__slider-c
                                 .volunteers-recom__slider-subtitle Подзаголовок
                                 .volunteers-recom__slider-title 
@@ -41,7 +41,7 @@
                     .swiper-slide 
                         .volunteers-recom__slider-i 
                             .volunteers-recom__slider-bg 
-                                img(src="./svg/bg.svg")
+                                img(src="./svg/volunteers/bg.svg")
                             .volunteers-recom__slider-c
                                 .volunteers-recom__slider-subtitle Подзаголовок
                                 .volunteers-recom__slider-title 
@@ -53,7 +53,7 @@
                     .swiper-slide 
                         .volunteers-recom__slider-i 
                             .volunteers-recom__slider-bg 
-                                img(src="./svg/bg.svg")
+                                img(src="./svg/volunteers/bg.svg")
                             .volunteers-recom__slider-c
                                 .volunteers-recom__slider-subtitle Подзаголовок
                                 .volunteers-recom__slider-title 
@@ -65,7 +65,7 @@
                     .swiper-slide 
                         .volunteers-recom__slider-i 
                             .volunteers-recom__slider-bg 
-                                img(src="./svg/bg.svg")
+                                img(src="./svg/volunteers/bg.svg")
                             .volunteers-recom__slider-c
                                 .volunteers-recom__slider-subtitle Подзаголовок
                                 .volunteers-recom__slider-title 
@@ -82,10 +82,33 @@
                     img(src="./svg/slider/arrow-prev.svg")
         .volunteers-recom__d Равным образом консультация с широким активом позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Таким образом укрепление и развитие структуры позволяет оценить значение соответствующий 
 
+        @@include('components/_input.pug', {
+            placeholder: "Имя"
+        })
+
+        @@include('components/_inputSearch.pug', {
+            placeholder: "Имя"
+        })
+
+        @@include('components/_inputPhone.pug')
+
+        @@include('components/_inputRub.pug', {
+            placeholder: "Имя"
+        })
+
+        @@include('components/_checkbox.pug', {
+            id: "checkboxs",
+            placeholder: "Имя"
+        })
+
+        @@include('components/_select.pug')
+
         ul.volunteers-recom__list
             li.volunteers-recom__list-i 
                 .volunteers-recom__list-t А
                 .volunteers-recom__list-peoples
+                    @@include('components/_cardUser.pug')
+                    @@include('components/_cardUser.pug')
                     @@include('components/_cardUser.pug')
 
 @@include('components/_script.pug')

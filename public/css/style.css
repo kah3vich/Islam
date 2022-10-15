@@ -924,8 +924,8 @@ opacity-h {
 	-ms-flex-pack : start;
 	justify-content : flex-start;
 	width : 100%;
-	background : #12a19a;
 	border-radius : 15px;
+	background : #12a19a;
 }
 
 .volunteers-recom__slider-bg {
@@ -1033,9 +1033,11 @@ opacity-h {
 	-ms-flex-pack : start;
 	justify-content : flex-start;
 	gap : 30px;
+	width : 100%;
 }
 
 .volunteers-recom__list-i {
+	width : 100%;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -1065,7 +1067,7 @@ opacity-h {
 	width : 100%;
 	display : -ms-grid;
 	display :     grid;
-	grid-template-columns : repeat(auto-fill, repeat(230px, 1fr));
+	grid-template-columns : repeat(auto-fill, minmax(230px, 1fr));
 	gap : 22px;
 }
 
@@ -1149,4 +1151,639 @@ opacity-h {
 
 .cardUser__content-s {
 	cursor : pointer;
+}
+
+.clang_select {
+	background-color : transparent;
+	width : 60px;
+	position : relative;
+}
+
+.clang_select .clang_select-placeholder {
+	display : block;
+	padding : 0;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	cursor : pointer;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : row-reverse;
+	    flex-direction : row-reverse;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
+}
+
+.clang_select .clang_select-placeholder p {
+	display : none;
+}
+
+.clang_select .clang_select-placeholder img {
+	width : 32px;
+	height : 32px;
+	margin : 0 5px 0 0;
+}
+
+.clang_select:after {
+	display : none !important;
+}
+
+.clang_select .clang_select-placeholder:after {
+	content : "";
+	background : url("../svg/header/arrow-down.svg") no-repeat;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	position : absolute;
+	top : 55%;
+	right : 8px;
+	-webkit-transform : translate(0, -55%);
+	    -ms-transform : translate(0, -55%);
+	        transform : translate(0, -55%);
+	height : 11px;
+	width : 9px;
+}
+
+.clang_select.clang_select-item-active .clang_select-placeholder:after {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	-webkit-transform : translate(0, -50%) rotate(180deg);
+	    -ms-transform : translate(0, -50%) rotate(180deg);
+	        transform : translate(0, -50%) rotate(180deg);
+}
+
+.clang_select .clang_select-block {
+	bottom : auto;
+	top : calc(100% + 5px);
+	position : absolute;
+	left : -130%;
+	z-index : 5;
+}
+
+.clang_select.clang_select-item-active .clang_select-block {
+	padding : 20px 30px;
+	width : 250px;
+	height : auto;
+	background : #ffffff;
+	-webkit-box-shadow : 0px 0px 30px rgba(0, 0, 0, 0.1);
+	        box-shadow : 0px 0px 30px rgba(0, 0, 0, 0.1);
+	border-radius : 5px;
+}
+
+.clang_select .clang_select-wrapper {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	height : 100%;
+}
+
+.clang_select .clang_select-element {
+	width : 100%;
+	padding : 3px 0;
+	background : 0 0;
+	color : #000000;
+	border : none;
+	margin : 0 0 5px 0;
+	text-align : left;
+	cursor : pointer;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : row-reverse;
+	    flex-direction : row-reverse;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
+}
+
+.clang_select .clang_select-element p {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 40px;
+	color : #000000;
+}
+
+.clang_select .clang_select-element img {
+	width : 32px;
+	height : 32px;
+	margin : 0 5px 0 0;
+}
+
+.clang_select .clang_select-element-active p {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 40px;
+	color : #7167e8;
+}
+
+.custom-input {
+	width : 100%;
+	outline : none;
+	background : #ffffff;
+	padding : 10px 17px;
+	min-height : 36px;
+	border : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius : 5px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #000000;
+}
+
+.custom-input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-search__label {
+	position : relative;
+	width : 100%;
+}
+
+.custom-input-search__icon {
+	position : absolute;
+	top : 50%;
+	right : 10px;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+}
+
+.custom-input-search__input {
+	width : 100%;
+	outline : none;
+	background : #ffffff;
+	padding : 10px 30px 10px 17px;
+	min-height : 36px;
+	border : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius : 5px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #000000;
+}
+
+.custom-input-search__input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-search__input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-search__input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-search__input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-search__input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-phone__label {
+	position : relative;
+	width : 100%;
+}
+
+.custom-input-phone__icon {
+	position : absolute;
+	top : 50%;
+	left : 15px;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+}
+
+.custom-input-phone__input {
+	width : 100%;
+	outline : none;
+	background : #ffffff;
+	padding : 10px 17px 10px 30px;
+	min-height : 36px;
+	border : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius : 5px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #000000;
+}
+
+.custom-input-phone__input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-phone__input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-phone__input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-phone__input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-phone__input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-rub__label {
+	position : relative;
+	width : 100%;
+}
+
+.custom-input-rub__text {
+	position : absolute;
+	top : 50%;
+	left : 15px;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #1a1c22;
+}
+
+.custom-input-rub__input {
+	width : 100%;
+	outline : none;
+	background : #ffffff;
+	padding : 10px 17px 10px 30px;
+	min-height : 36px;
+	border : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius : 5px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #000000;
+}
+
+.custom-input-rub__input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-rub__input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-rub__input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-rub__input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.custom-input-rub__input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : rgba(26, 28, 34, 0.3);
+}
+
+.checkbox {
+	position : relative;
+	margin-bottom : 1rem;
+}
+
+.checkbox__input {
+	-webkit-appearance : none;
+	   -moz-appearance : none;
+	        appearance : none;
+	position : absolute;
+}
+
+.checkbox__label {
+	padding-left : 25px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 14px;
+	color : #2e3a59;
+	cursor : pointer;
+}
+
+.checkbox__label:before {
+	content : "";
+	display : block;
+	width : 16px;
+	height : 16px;
+	border : 1px solid #cccccc;
+	background-color : #ffffff;
+	border-radius : 3px;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 1;
+	-webkit-transition : background 0.1s linear, border 0.1s linear;
+	     -o-transition : background 0.1s linear, border 0.1s linear;
+	        transition : background 0.1s linear, border 0.1s linear;
+}
+
+.checkbox__label:after {
+	content : "";
+	display : block;
+	width : 12px;
+	height : 12px;
+	background : url("../svg/components/check.svg") no-repeat;
+	background-size : 12px 12px;
+	opacity : 0;
+	position : absolute;
+	top : 2px;
+	left : 2px;
+	z-index : 2;
+	-webkit-transition : opacity 0.1s linear;
+	     -o-transition : opacity 0.1s linear;
+	        transition : opacity 0.1s linear;
+}
+
+.checkbox__input:checked + .checkbox__label:before {
+	background-color : #d5ba64;
+	border-color : #d5ba64;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+	opacity : 1;
+}
+
+.c_select {
+	padding : 10px 17px;
+	min-height : 36px;
+	background : #ffffff;
+	border : 1px solid rgba(0, 0, 0, 0.3);
+	border-radius : 5px;
+	width : 100%;
+	position : relative;
+}
+
+.c_select .c_select-placeholder {
+	display : block;
+	padding : 5px 0;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	cursor : pointer;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 135%;
+	color : #1a1c22;
+}
+
+.c_select:after {
+	display : none !important;
+}
+
+.c_select .c_select-placeholder:after {
+	content : "";
+	background : url("../svg/components/arrow-down.svg") no-repeat;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	position : absolute;
+	top : 50%;
+	right : 8px;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+	height : 5px;
+	width : 9px;
+}
+
+.c_select.c_select-item-active .c_select-placeholder:after {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	-webkit-transform : translate(0, -50%) rotate(180deg);
+	    -ms-transform : translate(0, -50%) rotate(180deg);
+	        transform : translate(0, -50%) rotate(180deg);
+}
+
+.c_select .c_select-block {
+	bottom : auto;
+	top : calc(100% + 3px);
+	position : absolute;
+	left : 0;
+	z-index : 5;
+}
+
+.c_select.c_select-item-active .c_select-block {
+	padding : 20px;
+	width : 100%;
+	height : auto;
+	background : #ffffff;
+	border : 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow : 0px 0px 30px rgba(0, 0, 0, 0.1);
+	        box-shadow : 0px 0px 30px rgba(0, 0, 0, 0.1);
+	border-radius : 5px;
+}
+
+.c_select .c_select-wrapper {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	height : 145px;
+	overflow-y : auto;
+}
+
+.c_select .c_select-wrapper::-webkit-scrollbar {
+	width : 27px;
+}
+
+.c_select .c_select-wrapper::-webkit-scrollbar-track {
+	-webkit-box-shadow : inset 0 0 10px 10px #808080;
+	        box-shadow : inset 0 0 10px 10px #808080;
+	border : solid 12px transparent;
+}
+
+.c_select .c_select-wrapper::-webkit-scrollbar-thumb {
+	-webkit-box-shadow : inset 0 0 10px 10px #000000;
+	        box-shadow : inset 0 0 10px 10px #000000;
+	border : solid 10px transparent;
+}
+
+.c_select .c_select-element {
+	width : 100%;
+	padding : 3px 0;
+	background : 0 0;
+	font-family : "NunitoSans";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 30px;
+	color : #000000;
+	border : none;
+	margin : 0 0 5px 0;
+	text-align : left;
+	cursor : pointer;
+}
+
+.c_select .c_select-element-active {
+	background : rgba(0, 0, 0, 0.03);
 }

@@ -87,7 +87,11 @@ header.header
                     else 
                         nav.header__nav 
                             a(href="/for_volunteers.html") Для волонтеров
-                .header__lang 0 
+                .header__lang 
+                    select(class="clang_select" name="lang" style="display: none")
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский1
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский2
     .header__banner 
         .containers
             .header__banner-t Проверьте ваш сертификат чтобы убедиться что он выдан  что то там что то там оверьте ваш сертификат чтобы убедиться что 

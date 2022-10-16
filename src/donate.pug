@@ -1,0 +1,86 @@
+@@include('components/_head.pug', {
+    "title": "Пожертвовать"
+})
+
+@@include('components/_header.pug', {
+    "type": "black",
+    "activePage": "/donate"
+})
+
+- var n = 0;
+
+.donate-main
+    .containers 
+        .donate-main__t Пожертвовать
+
+        @@include('components/_banners.pug')
+
+.donate-form 
+    .donate-form__banner 
+        img(src="./svg/donate/bg.svg")
+    .containers 
+        .donate-form__wrapper
+            .donate-form__t Заполните информацию о себе
+            .donate-form__d Товарищи! реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения
+            .donate-form__blocks 
+                .donate-form__item
+                    .donate-form__item-l Введите Вашу фамилию
+                    @@include('components/_input.pug', {
+                        placeholder: 'Фамилия'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Введите Ваше имя
+                    @@include('components/_input.pug', {
+                        placeholder: 'Имя'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Введите Ваше Отчество 
+                    @@include('components/_input.pug', {
+                        placeholder: 'Отчество'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Введите номер телефона
+                    @@include('components/_inputPhone.pug')
+                .donate-form__item
+                    .donate-form__item-l Введите вашу почту
+                    @@include('components/_input.pug', {
+                        placeholder: 'mail@mail.ru'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Выберите страну
+                    @@include('components/_select.pug', {
+                        placeholder: 'Страна'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Введите регион
+                    @@include('components/_input.pug', {
+                        placeholder: 'Город / Село / Поселок'
+                    })
+                .donate-form__item
+                    .donate-form__item-h 
+                        .donate-form__item-l Выберите страну
+                        a(href="/").donate-form__item-a у меня нет рекомендателя
+                    @@include('components/_select.pug', {
+                        placeholder: 'Выберите рекомендателя'
+                    })
+                .donate-form__item
+                    .donate-form__item-l Введите сумму пожертвования
+                    @@include('components/_inputRub.pug', {
+                        placeholder: ''
+                    })
+            .donate-form__checkboxs
+                @@include('components/_checkbox.pug', {
+                    id: '1',
+                    placeholder: 'Согласен с политикой обработки персональных данных, договором офертой  и условиями использования'
+                })
+                @@include('components/_checkbox.pug', {
+                    id: '2',
+                    placeholder: 'Согласен с политикой обработки персональных данных, правилами предоставления услуг по подписке, офертой рекуррентных платежей, договором-офертой и условиями использования'
+                })
+            button.donate-form__button Пожертвовать
+
+
+
+
+
+@@include('components/_script.pug')

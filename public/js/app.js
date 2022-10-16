@@ -171,11 +171,11 @@ $(function () {
     id: 'previous-page'
   }).append($('<a>').addClass('page-link').attr({
     href: 'javascript:void(0)'
-  }).text('Prev')), $('<li>').addClass('page-item').attr({
+  }).text('')), $('<li>').addClass('page-item').attr({
     id: 'next-page'
   }).append($('<a>').addClass('page-link').attr({
     href: 'javascript:void(0)'
-  }).text('Next')));
+  }).text('')));
   // Show the page links
   $('.contributors__list ').show();
   showPage(1);
@@ -190,9 +190,7 @@ $(function () {
   $('#previous-page').on('click', function () {
     return showPage(currentPage - 1);
   });
-  $('#pagination-controls').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 0);
-  });
+  // $('#pagination-controls').on('click', function () {
+  // 	$('html,body').animate({ scrollTop: 0 }, 0)
+  // })
 });

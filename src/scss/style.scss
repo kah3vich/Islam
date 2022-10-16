@@ -95,7 +95,10 @@ opacity-h {
 @import 'footer';
 
 @import 'volunteers/style';
+@import 'donate/style';
 @import 'contributors/style';
+@import 'for_volunteers/style';
+@import 'verification/style';
 
 //! --------------------------------------------------------------------
 //! --------------------------------------------------------------------
@@ -625,7 +628,7 @@ opacity-h {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 		border-radius: 10px;
-		padding: 26px 10px 26px 56px;
+		padding: 26px 36px 26px 36px;
 		width: 100%;
 		display: grid;
 		grid-template-columns: 20fr 1fr;
@@ -798,5 +801,69 @@ opacity-h {
 		padding: 8px 35px;
 		background: #d5ba64;
 		border-radius: 11px;
+	}
+}
+
+//| Custom Pagination
+
+#pagination-controls {
+	width: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	margin: 0 auto 55px auto;
+	gap: 5px;
+	& .active {
+		border: 1px solid #6c5dd3;
+		border-radius: 5px;
+	}
+	& li {
+		list-style-type: none;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #6c5dd3;
+	}
+	& #previous-page {
+		& .page-link {
+			width: 30px;
+			height: 30px;
+			position: relative;
+			&::after {
+				content: '';
+				width: 6px;
+				height: 10px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background: url('../svg/pagination/arrow-prev.svg');
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	& #next-page {
+		& .page-link {
+			width: 30px;
+			height: 30px;
+			position: relative;
+			&::after {
+				content: '';
+				width: 6px;
+				height: 10px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background: url('../svg/pagination/arrow-next.svg');
+				transform: translate(-50%, -50%);
+			}
+		}
 	}
 }

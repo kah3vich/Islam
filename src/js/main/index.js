@@ -231,7 +231,7 @@ $(function () {
 					.attr({
 						href: 'javascript:void(0)'
 					})
-					.text('Prev')
+					.text('')
 			),
 		$('<li>')
 			.addClass('page-item')
@@ -242,7 +242,7 @@ $(function () {
 					.attr({
 						href: 'javascript:void(0)'
 					})
-					.text('Next')
+					.text('')
 			)
 	)
 	// Show the page links
@@ -260,7 +260,7 @@ $(function () {
 	$('#previous-page').on('click', function () {
 		return showPage(currentPage - 1)
 	})
-	$('#pagination-controls').on('click', function () {
-		$('html,body').animate({ scrollTop: 0 }, 0)
-	})
+	// $('#pagination-controls').on('click', function () {
+	// 	$('html,body').animate({ scrollTop: 0 }, 0)
+	// })
 })

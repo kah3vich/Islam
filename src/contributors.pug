@@ -38,9 +38,9 @@
                 })
         
         .contributors__list 
-            each _ in Array(155)
+            each _, i in Array(155)
                 .contributors__item
-                    .contributors__item-d 12.02.2022
+                    .contributors__item-d= i
                     .contributors__item-n Иванов Иван Александрович
                     .contributors__item-p 10.000 ₽
                     .contributors__item-c Россия, Самарская обл. г. Тольятти

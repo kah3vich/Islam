@@ -1,0 +1,74 @@
+@@include('components/_head.pug', {
+    "title": "Проверка сертификата"
+})
+
+@@include('components/_header.pug', {
+    "type": "black",
+    "activePage": "/verification"
+})
+
+.verification-main
+    .containers 
+        .verification-main__t Проверка сертификата
+
+        @@include('components/_banners.pug')
+
+
+.containers
+    .verification-ready 
+        .verification-ready__header 
+            .verification-ready__header-i 
+                img(src="./svg/verification/ready.svg")
+            .verification-ready__header-t Проверка прошла успешно
+        .verification-ready__content 
+            .verification-ready__blocks
+                .verification-ready__content-l 
+                    .verification-ready__content-t ФИО жертвователя:
+                    .verification-ready__content-i Иванов Иван Александрович
+                .verification-ready__content-l 
+                    .verification-ready__content-t ФИО жертвователя:
+                    .verification-ready__content-i Иванов Иван Александрович
+                .verification-ready__content-l 
+                    .verification-ready__content-t ФИО жертвователя:
+                    .verification-ready__content-i Иванов Иван Александрович
+                .verification-ready__content-l 
+                    .verification-ready__content-t ФИО жертвователя:
+                    .verification-ready__content-i Иванов Иван Александрович
+                .verification-ready__content-l 
+                    .verification-ready__content-t ФИО жертвователя:
+                    .verification-ready__content-i Иванов Иван Александрович
+                
+            .verification-ready__photo 
+                img(src="./img/verification/serf.png")
+
+.containers
+    .verification-error 
+        .verification-error__header 
+            .verification-error__header-i 
+                img(src="./svg/verification/error.svg")
+            .verification-error__header-t Проверка прошла успешно
+        .verification-error__content 
+            .verification-error__content-t Проверьте правильность написания номера сертификата или других данных для поиска. 
+            .verification-error__content-d 
+                | Если в итоге вы не смогли найти свой сертификат, то:
+                br
+                | 1. Обратитесь к своему рекомендателю, чтобы уточнить добавлен ли ваш платеж
+                br
+                | 2. Если рекомендателя нет, то напишите нам в поддержку на сайте позвоните по номеру  8 800 453 83 04
+            .verification-error__content-buttons 
+                a(href="/").verification-error__content-button Обратиться к рекомендателю
+                a(href="/").verification-error__content-button Написать в поддержку
+
+
+
+
+.verification-description
+    .containers 
+        .verification-description__wrapper 
+            .verification-description__t Почему важно проверять сертификат на подлинность?
+            .verification-description__d Равным образом консультация с широким активом позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Таким образом укрепление и развитие структуры позволяет оценить значение соответствующий 
+
+
+
+
+@@include('components/_script.pug')

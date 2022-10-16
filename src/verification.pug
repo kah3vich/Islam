@@ -13,6 +13,36 @@
 
         @@include('components/_banners.pug')
 
+.verification-form 
+    .containers
+        .verification-form__wrapper 
+            .verification-form__item 
+                .verification-form__element 
+                    .verification-form__element-l Проверка по номеру сертификата
+                    @@include('components/_input.pug', {
+                        placeholder: 'Введите 12 цифр номера сертификата'
+                    })
+                button.verification-form__button Проверить
+            .verification-form__item 
+                .verification-form__element 
+                    .verification-form__element-l Проверка по номеру телефона
+                    @@include('components/_inputPhone.pug')
+                button.verification-form__button Проверить
+            .verification-form__item 
+                .verification-form__element 
+                    .verification-form__element-l Проверка по ФИО
+                    .verification-form__element-list 
+                        @@include('components/_input.pug', {
+                            placeholder: "Фамилия"
+                        })
+                        @@include('components/_input.pug', {
+                            placeholder: "Имя"
+                        })
+                        @@include('components/_input.pug', {
+                            placeholder: "Отчество"
+                        })
+                button.verification-form__button Проверить
+            
 
 .containers
     .verification-ready 

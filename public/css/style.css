@@ -1736,6 +1736,97 @@ opacity-h {
 	color : #202224;
 }
 
+.verification-form {
+	width : 100%;
+	padding : 55px 0;
+}
+
+.verification-form__wrapper {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	gap : 15px;
+}
+
+.verification-form__item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : end;
+	-ms-flex-align : end;
+	align-items : flex-end;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	gap : 20px;
+	width : 100%;
+}
+
+.verification-form__element {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	gap : 10px;
+}
+
+.verification-form__element-l {
+	font-family : "NunitoSans";
+	font-style : normal;
+	font-weight : 600;
+	font-size : 16px;
+	line-height : 30px;
+	color : #000000;
+	opacity : 0.8;
+}
+
+.verification-form__element-list {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+	width : 100%;
+	gap : 25px;
+}
+
+.verification-form__button {
+	font-family : "NunitoSans";
+	font-style : normal;
+	font-weight : 700;
+	font-size : 14px;
+	line-height : 18px;
+	color : #ffffff;
+	padding : 10px 75px;
+	background : #d5ba64;
+	border-radius : 5px;
+}
+
 .verification-description {
 	width : 100%;
 	padding : 55px 0;

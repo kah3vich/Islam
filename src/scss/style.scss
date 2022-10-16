@@ -190,6 +190,7 @@ opacity-h {
 .clang_select:after {
 	display: none !important;
 }
+
 .clang_select .clang_select-placeholder:after {
 	content: '';
 	background: url('../svg/header/arrow-down.svg') no-repeat;
@@ -201,6 +202,19 @@ opacity-h {
 	height: 11px;
 	width: 9px;
 }
+
+.clang_select-white .clang_select-placeholder:after {
+	content: '';
+	background: url('../svg/header/arrow-d.svg') no-repeat;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 55%;
+	right: 8px;
+	transform: translate(0, -55%);
+	height: 11px;
+	width: 9px;
+}
+
 .clang_select.clang_select-item-active .clang_select-placeholder:after {
 	transition: all 0.5s ease;
 	transform: translate(0, -50%) rotate(180deg);

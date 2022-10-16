@@ -2229,6 +2229,22 @@ opacity-h {
 	width : 9px;
 }
 
+.clang_select-white .clang_select-placeholder:after {
+	content : "";
+	background : url("../svg/header/arrow-d.svg") no-repeat;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	position : absolute;
+	top : 55%;
+	right : 8px;
+	-webkit-transform : translate(0, -55%);
+	    -ms-transform : translate(0, -55%);
+	        transform : translate(0, -55%);
+	height : 11px;
+	width : 9px;
+}
+
 .clang_select.clang_select-item-active .clang_select-placeholder:after {
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;

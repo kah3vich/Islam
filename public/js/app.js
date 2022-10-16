@@ -42,6 +42,9 @@ $(function () {
       $next.find('.clang_select-placeholder').trigger('click');
     });
   });
+  if ($('select.clang_select').hasClass('clang_select-white')) {
+    $('div.clang_select').addClass('clang_select-white');
+  }
 });
 
 //| Phone Mask

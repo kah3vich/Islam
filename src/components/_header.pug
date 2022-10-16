@@ -44,7 +44,11 @@ header.header
                     else 
                         nav.header__nav 
                             a(href="/for_volunteers.html") Для волонтеров
-                .header__lang select 
+                .header__lang 
+                    select(class="clang_select clang_select-white" name="lang" style="display: none")
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский1
+                        option(data-icon="./svg/header/rus.svg" value="default" selected="") Русский2
     else 
         .header__wrapper.header__wrapper-black
             .containers 

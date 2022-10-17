@@ -62,7 +62,7 @@
 			border-radius: 10px;
 		}
 		& a {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 13px;
@@ -82,7 +82,7 @@
 			justify-content: space-between;
 		}
 		&-t {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 13px;
@@ -94,7 +94,7 @@
 			background: #ff8743;
 			border-radius: 5px;
 			padding: 5px 25px;
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 12px;

@@ -197,3 +197,25 @@ $(function () {
   // 	$('html,body').animate({ scrollTop: 0 }, 0)
   // })
 });
+
+//| Modal Thx
+
+$('#buttonModalThxOpen').on('click', function (e) {
+  $('#modalThx').removeClass('display-n');
+  $('body').style('overflow', 'hidden');
+});
+$('#buttonModalThxClose').on('click', function (e) {
+  $('#modalThx').addClass('display-n');
+  $('body').style('overflow', 'visible');
+});
+$('#modalThx').on('mouseup', function (e) {
+  var div = $('.modal-thx__wrapper ');
+  if (!div.is(e.target) && div.has(e.target).length === 0) {
+    $('#modalThx').addClass('display-n');
+    $('body').css('overflow', 'visible');
+  }
+})
+
+// overflow: hidden;
+// overflow: visible;
+;

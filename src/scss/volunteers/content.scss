@@ -9,7 +9,7 @@
 	}
 	&__t {
 		width: 100%;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 32px;
@@ -19,7 +19,7 @@
 	}
 	&__d {
 		margin: 44px 0 49px 0;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		width: 85%;
 		font-style: normal;
 		font-weight: 600;
@@ -45,7 +45,7 @@
 			gap: 19px;
 		}
 		&-t {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 32px;

@@ -23,7 +23,7 @@
                 .for_volunteers-main__wrapper-i 
                     .for_volunteers-main__wrapper-l Введите номер телефона
                     @@include('components/_inputPhone.pug')
-                button.for_volunteers-main__wrapper-b Стать волонтером
+                button.for_volunteers-main__wrapper-b#buttonModalThxOpen Стать волонтером
 
 
 .for_volunteers-description
@@ -60,5 +60,6 @@
             .for_volunteers-question__item 
                 @@include('components/_accordion.pug')
 
+@@include('components/_modalThx.pug')
 
 @@include('components/_script.pug')

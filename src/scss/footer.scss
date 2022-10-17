@@ -33,7 +33,7 @@
 			justify-content: center;
 		}
 		&-t {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 800;
 			font-size: 50px;
@@ -47,7 +47,7 @@
 			border-radius: 500px;
 			padding: 18px 40px;
 			cursor: pointer;
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 20px;
@@ -68,7 +68,7 @@
 		align-items: center;
 		justify-content: center;
 		&-name {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 16px;
@@ -98,7 +98,7 @@
 			width: 345px;
 		}
 		&-t {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 18px;
@@ -112,7 +112,7 @@
 			justify-content: flex-start;
 		}
 		&-title {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 20px;
@@ -130,7 +130,7 @@
 		&-i {
 			cursor: pointer;
 			& a {
-				font-family: 'Inter';
+				font-family: $fontInter;
 				font-style: normal;
 				font-weight: 400;
 				font-size: 16px;

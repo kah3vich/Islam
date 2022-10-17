@@ -131,7 +131,7 @@ opacity-h {
 		align-items: flex-start;
 		justify-content: flex-start;
 		&-n {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 15px;
@@ -140,7 +140,7 @@ opacity-h {
 		}
 		&-j {
 			margin: 8px 0 0 0;
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 12px;
@@ -255,7 +255,7 @@ opacity-h {
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 	& p {
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 15px;
@@ -270,7 +270,7 @@ opacity-h {
 }
 .clang_select .clang_select-element-active {
 	& p {
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 15px;
@@ -289,14 +289,14 @@ opacity-h {
 	min-height: 36px;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
-	font-family: 'Inter';
+	font-family: $fontInter;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 135%;
 	color: #000;
 	&::placeholder {
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
@@ -326,14 +326,14 @@ opacity-h {
 		min-height: 36px;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 		border-radius: 5px;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 135%;
 		color: #000;
 		&::placeholder {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 12px;
@@ -364,14 +364,14 @@ opacity-h {
 		min-height: 36px;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 		border-radius: 5px;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 135%;
 		color: #000;
 		&::placeholder {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 12px;
@@ -393,7 +393,7 @@ opacity-h {
 		top: 50%;
 		left: 15px;
 		transform: translate(0, -50%);
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
@@ -408,14 +408,14 @@ opacity-h {
 		min-height: 36px;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 		border-radius: 5px;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 135%;
 		color: #000;
 		&::placeholder {
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 12px;
@@ -439,7 +439,7 @@ opacity-h {
 
 .checkbox__label {
 	padding-left: 25px;
-	font-family: 'Inter';
+	font-family: $fontInter;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
@@ -510,7 +510,7 @@ opacity-h {
 	height: 100%;
 	position: relative;
 	cursor: pointer;
-	font-family: 'Inter';
+	font-family: $fontInter;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
@@ -576,7 +576,7 @@ opacity-h {
 	width: 100%;
 	padding: 3px 0;
 	background: 0 0;
-	font-family: 'NunitoSans';
+	font-family: $fontNunito;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
@@ -605,7 +605,7 @@ opacity-h {
 		justify-content: flex-start;
 	}
 	&__t {
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 35px;
@@ -614,7 +614,7 @@ opacity-h {
 	}
 	&__a {
 		margin: 13px 0 0 0;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 16px;
@@ -652,7 +652,7 @@ opacity-h {
 		transition: all 0.5s ease;
 	}
 	&__title {
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 18px;
@@ -679,7 +679,7 @@ opacity-h {
 		border-radius: 0 0 10px 10px;
 		& p {
 			padding: 15px 30px;
-			font-family: 'Inter';
+			font-family: $fontInter;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
@@ -690,7 +690,7 @@ opacity-h {
 	}
 	&__p {
 		margin: 45px auto 0 auto;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 16px;
@@ -779,7 +779,7 @@ opacity-h {
 		justify-content: flex-start;
 	}
 	&-subtitle {
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
@@ -788,7 +788,7 @@ opacity-h {
 	}
 	&-title {
 		margin: 8px 0 0 0;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 900;
 		font-size: 37px;
@@ -796,7 +796,7 @@ opacity-h {
 		color: #ffffff;
 	}
 	&-text {
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
@@ -806,7 +806,7 @@ opacity-h {
 	}
 	&-button {
 		margin: 30px 0 0 0;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 14px;
@@ -839,7 +839,7 @@ opacity-h {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: 'Inter';
+		font-family: $fontInter;
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -879,5 +879,62 @@ opacity-h {
 				transform: translate(-50%, -50%);
 			}
 		}
+	}
+}
+
+//| Modal Thx
+
+.modal-thx {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	z-index: 15;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__wrapper {
+		width: 350px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+		background: #ffffff;
+		border-radius: 20px;
+		padding: 32px 40px;
+	}
+	&__title {
+		font-family: $fontNunito;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 55px;
+		text-align: center;
+		color: #000000;
+	}
+	&__text {
+		margin: 24px 0 0 0;
+		font-family: $fontInter;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 27px;
+		text-align: center;
+		color: #000000;
+	}
+	&__button {
+		margin: 50px 0 0 0;
+		background: #d5ba64;
+		border-radius: 5px;
+		padding: 10px 53px;
+		font-family: $fontNunito;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 28px;
+		text-align: center;
+		color: #ffffff;
 	}
 }

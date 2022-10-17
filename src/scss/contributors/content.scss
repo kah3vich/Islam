@@ -9,7 +9,7 @@
 	}
 	&__t {
 		width: 100%;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 32px;
@@ -32,7 +32,7 @@
 			gap: 10px;
 		}
 		&-t {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 800;
 			font-size: 18px;
@@ -60,7 +60,7 @@
 		border-radius: 5px;
 		padding: 10px 55px;
 		&-d {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 800;
 			font-size: 14px;
@@ -68,7 +68,7 @@
 			color: #202224;
 		}
 		&-n {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 14px;
@@ -76,7 +76,7 @@
 			color: #202224;
 		}
 		&-p {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 800;
 			font-size: 14px;
@@ -84,7 +84,7 @@
 			color: #202224;
 		}
 		&-c {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 14px;

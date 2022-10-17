@@ -7,7 +7,7 @@
 		justify-content: flex-start;
 	}
 	&__t {
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 32px;
@@ -50,7 +50,7 @@
 		flex-direction: column;
 	}
 	&__t {
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 32px;
@@ -59,7 +59,7 @@
 	}
 	&__d {
 		margin: 30px 0 0 0;
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
@@ -85,7 +85,7 @@
 		justify-content: flex-start;
 		gap: 8px;
 		&-l {
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 16px;
@@ -102,7 +102,7 @@
 		}
 		&-a {
 			cursor: pointer;
-			font-family: 'NunitoSans';
+			font-family: $fontNunito;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 12px;
@@ -121,7 +121,7 @@
 		margin: 35px 0 0 0;
 	}
 	&__button {
-		font-family: 'NunitoSans';
+		font-family: $fontNunito;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 16px;

@@ -7,6 +7,7 @@
 $bg: #fff;
 $fontNunito: 'NunitoSans';
 $fontInter: 'Inter';
+$fontForum: 'Forum';
 
 //! --------------------------------------------------------------------
 //! Стили --------------------------------------------------------------
@@ -99,6 +100,7 @@ opacity-h {
 @import 'contributors/style';
 @import 'for_volunteers/style';
 @import 'verification/style';
+@import 'certificate/style';
 
 //! --------------------------------------------------------------------
 //! --------------------------------------------------------------------

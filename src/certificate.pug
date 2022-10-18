@@ -1,0 +1,30 @@
+@@include('components/_head.pug', {
+    "title": "Сертификат"
+})
+
+.certificate
+    .certificate__banner 
+        img(src="./img/certificate/banner.png")
+    .certificate__content 
+        .certificate__content-t 
+            | Участника проекта многосерийного кинофильма «Шейх Шамиль» 
+            br 
+            | выдаётся 
+            span __________________________________________
+            | (ФИО) 
+            br
+            | из 
+            span ______________________________ 
+            | (страна/населенный пункт)
+
+
+
+        .certificate__content-t
+            | «Шейх Шамиль» от проекта «Народное Кино» — многосерийный 
+            br
+            | кинофильм, повествующий о борце за свободу людей и одном из 
+            br
+            | величайших мусульман — Имаме Шамиле
+
+
+@@include('components/_script.pug')

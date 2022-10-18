@@ -9,3 +9,5 @@
 # For Volunteers: [click me](https://kah3vich.github.io/Islam/public/for_volunteers.html)
 
 # Verification: [click me](https://kah3vich.github.io/Islam/public/verification.html)
+
+# Сertificate: [click me](https://kah3vich.github.io/Islam/public/certificate.html)

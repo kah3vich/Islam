@@ -128,6 +128,36 @@
 			color: #ffffff;
 		}
 	}
+	&__photo {
+		width: 320px;
+		height: 230px;
+		overflow: hidden;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6);
+			z-index: 2;
+		}
+		&-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: 'NunitoSans';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 25px;
+			text-align: center;
+			color: #ffffff;
+			z-index: 3;
+		}
+	}
 	&__blocks {
 		display: flex;
 		flex-direction: column;

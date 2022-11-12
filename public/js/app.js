@@ -7,6 +7,9 @@ var volunteersSwiper = new Swiper('.volunteersSwiper', {
   navigation: {
     nextEl: '.banners__slider .swiper-controls .swiper-button-next',
     prevEl: '.banners__slider .swiper-controls .swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination'
   }
 });
 
@@ -214,8 +217,15 @@ $('#modalThx').on('mouseup', function (e) {
     $('#modalThx').addClass('display-n');
     $('body').css('overflow', 'visible');
   }
-})
+});
 
-// overflow: hidden;
-// overflow: visible;
-;
+//| Menu
+
+$('.header__burder').on('click', function () {
+  $('.menu').removeClass('display-n');
+  $('body').css('overflow', 'hidden');
+});
+$('.menu__close').on('click', function () {
+  $('.menu').addClass('display-n');
+  $('body').css('overflow', 'visible');
+});

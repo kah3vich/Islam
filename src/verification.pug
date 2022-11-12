@@ -68,8 +68,9 @@
                     .verification-ready__content-t ФИО жертвователя:
                     .verification-ready__content-i Иванов Иван Александрович
                 
-            .verification-ready__photo 
+            a.verification-ready__photo(href="/")
                 img(src="./img/verification/serf.png")
+                .verification-ready__photo-title Нажмите, чтобы открыть сертификат
 
 .containers
     .verification-error 
@@ -99,6 +100,6 @@
             .verification-description__d Равным образом консультация с широким активом позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Таким образом укрепление и развитие структуры позволяет оценить значение соответствующий 
 
 
-
+@@include('components/_menu.pug')
 
 @@include('components/_script.pug')

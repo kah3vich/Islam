@@ -104,6 +104,8 @@ opacity-h {
 @import 'certificate/style';
 @import 'thanks/style';
 
+@import 'media';
+
 //! --------------------------------------------------------------------
 //! --------------------------------------------------------------------
 //! --------------------------------------------------------------------
@@ -747,6 +749,21 @@ opacity-h {
 	}
 	& .swiper-button-next {
 		right: 40px;
+	}
+	& .swiper-pagination {
+		bottom: -30px;
+		display: none;
+		& .swiper-pagination-bullet {
+			width: 13px;
+			height: 13px;
+			background: #f1f1f1;
+			opacity: 1;
+		}
+		& .swiper-pagination-bullet-active {
+			width: 13px;
+			height: 13px;
+			background: #d5ba64;
+		}
 	}
 	&-i {
 		border-radius: 15px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сертификат</title>
+    <title>Пожертвовать</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20221112201726" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20221112201726" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -20,12 +20,43 @@
   <link rel="stylesheet" href="css/style.min.css?_v=20221112201726">
 </html>
 <body></body>
-<div class="certificate">
-  <div class="certificate__banner"> <picture><source srcset="./img/certificate/banner.webp" type="image/webp"><img src="./img/certificate/banner.png"></picture></div>
-  <div class="certificate__content"> 
-    <div class="certificate__content-t">
-       Участника проекта многосерийного кинофильма «Шейх Шамиль» <br>выдаётся <span>__________________________________________</span>(ФИО) <br>из <span>______________________________ </span>(страна/населенный пункт)</div>
-    <div class="certificate__content-t">«Шейх Шамиль» от проекта «Народное Кино» — многосерийный <br>кинофильм, повествующий о борце за свободу людей и одном из <br>величайших мусульман — Имаме Шамиле</div>
+<header class="header">
+  <div class="header__wrapper header__wrapper-black">
+    <div class="containers"> 
+      <div class="header__burder"> <img src="./svg/header/burber.svg"></div><a class="header__logo" href="/"> <picture><source srcset="./img/header/logo-black.webp" type="image/webp"><img src="./img/header/logo-black.png"></picture></a>
+      <div class="header__navs">
+        <nav class="header__nav"><a href="/">Главная</a></nav>
+        <nav class="header__nav header__nav-a"> <a href="/donate.html">Пожертвовать</a></nav>
+        <nav class="header__nav"> <a href="/volunteers.html">Волонтеры</a></nav>
+        <nav class="header__nav"><a href="/contributors.html">Жертвователи</a></nav>
+        <nav class="header__nav"><a href="/verification.html">Проверка сертификата</a></nav>
+        <nav class="header__nav"> <a href="/for_volunteers.html">Для волонтеров</a></nav>
+      </div>
+      <div class="header__lang"> 
+        <select class="clang_select" name="lang" style="display: none">
+          <option data-icon="./svg/header/rus.svg" value="default" selected="">Русский</option>
+          <option data-icon="./svg/header/rus.svg" value="default" selected="">Русский1</option>
+          <option data-icon="./svg/header/rus.svg" value="default" selected="">Русский2</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="header__banner"> 
+    <div class="containers">
+      <div class="header__banner-t">Проверьте ваш сертификат чтобы убедиться что он выдан  что то там что то там оверьте ваш сертификат чтобы убедиться что </div><a class="header__banner-b" href="/">Проверить</a>
+    </div>
+  </div>
+</header>
+<div class="thanks-main"> 
+  <div class="containers">
+    <div class="thanks-main__container"> 
+      <div class="thanks-main__title">Ваш вклад был получен!</div>
+      <div class="thanks-main__subtitle">Мы отправили </div><a class="thanks-main__link" href="/"><picture><source srcset="./img/thanks/serf.webp" type="image/webp"><img class="thanks-main__link-img" src="./img/thanks/serf.png"></picture>
+        <p class="thanks-main__link-title">Нажмите, чтобы открыть сертификат</p></a>
+      <div class="thanks-main__buttons"><a class="thanks-main__button" href="/"> 
+          <p>Заказать сертификат почтой</p></a><a class="thanks-main__button" href="/"> 
+          <p>На главную</p></a></div>
+    </div>
   </div>
 </div>
 <script type="module" src="js/app.min.js?_v=20221112201726"></script>

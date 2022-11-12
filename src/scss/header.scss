@@ -6,6 +6,9 @@
 	position: relative;
 	z-index: 10;
 	justify-content: flex-start;
+	&__burder {
+		display: none;
+	}
 	&__wrapper {
 		width: 100%;
 		padding: 18px 0;

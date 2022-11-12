@@ -1,0 +1,25 @@
+@@include('components/_head.pug', {
+    "title": "Пожертвовать"
+})
+
+@@include('components/_header.pug', {
+    "type": "black",
+    "activePage": "/donate"
+})
+
+.thanks-main 
+    .containers
+        .thanks-main__container 
+            .thanks-main__title Ваш вклад был получен!
+            .thanks-main__subtitle Мы отправили 
+            a.thanks-main__link(href="/")
+                img.thanks-main__link-img(src="./img/thanks/serf.png")
+                p.thanks-main__link-title Нажмите, чтобы открыть сертификат
+            .thanks-main__buttons
+                a.thanks-main__button(href="/") 
+                    p Заказать сертификат почтой
+                a.thanks-main__button(href="/") 
+                    p На главную
+
+
+@@include('components/_script.pug')

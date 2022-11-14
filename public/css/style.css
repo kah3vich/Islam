@@ -368,6 +368,12 @@ opacity-h {
 	font-size : 16px;
 	line-height : 27px;
 	color : rgba(255, 255, 255, 0.7);
+	overflow : hidden;
+	-o-text-overflow : ellipsis;
+	   text-overflow : ellipsis;
+	display : -webkit-box;
+	-webkit-line-clamp : 13;
+	-webkit-box-orient : vertical;
 }
 
 .main-banner__content-b {
@@ -4792,5 +4798,22 @@ opacity-h {
 
 	.for_volunteers-plus .containers {
 		padding : 0 20px;
+	}
+}
+
+@media (max-height: 765px) {
+	.for_volunteers-main__wrapper {
+		height : 100%;
+		padding : 50px 0;
+	}
+
+	.for_volunteers-main__banner img
+	,
+	.for_volunteers-main::after {
+		height : 100%;
+	}
+
+	.for_volunteers-main {
+		overflow : hidden;
 	}
 }

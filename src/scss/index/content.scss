@@ -48,6 +48,11 @@
 			font-size: 16px;
 			line-height: 27px;
 			color: rgba(255, 255, 255, 0.7);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 13;
+			-webkit-box-orient: vertical;
 		}
 		&-b {
 			margin: 65px 0 0 0;

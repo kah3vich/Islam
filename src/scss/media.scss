@@ -498,3 +498,19 @@
 		padding: 0 20px;
 	}
 }
+
+// height
+
+@media (max-height: 765px) {
+	.for_volunteers-main__wrapper {
+		height: 100%;
+		padding: 50px 0;
+	}
+	.for_volunteers-main__banner img,
+	.for_volunteers-main::after {
+		height: 100%;
+	}
+	.for_volunteers-main {
+		overflow: hidden;
+	}
+}
